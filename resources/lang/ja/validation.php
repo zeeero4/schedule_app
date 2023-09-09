@@ -213,5 +213,7 @@ return [
         'updated_at'               => '更新日',
         'username'                 => 'ユーザー名',
         'year'                     => '年',
+        'start'                    => '開始日時',
+        'end'                      => '終了日時',
     ],
 ];

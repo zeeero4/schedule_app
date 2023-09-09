@@ -190,4 +190,19 @@
     "You may not delete your personal team.": "パーソナルチームを削除することはできません。",
     "You may not leave a team that you created.": "自身が作成したチームを離れることはできません。",
     "Your email address is unverified.": "メールアドレスが未認証です。"
+
+    ,"Click here for registered users": "登録済みの方はこちら"
+    ,"Click here for new registration": "新規登録はこちら"
+    ,"Event Form": "登録フォーム"
+    ,"Event Update Form": "更新フォーム"
+    ,"Event Info": "予定詳細"
+    ,"AllDay": "終日"
+    ,"Event Start": "開始日時"
+    ,"Event End": "終了日時"
+    ,"Event Name": "タイトル"
+    ,"Description": "詳細"
+    ,"Details": "詳細"
+    ,"Edit": "編集"
+    ,"Go back": "戻る"
+    ,"Update": "更新"
 }

@@ -13,7 +13,7 @@ class EventPolicy
      */
     public function viewAny(User $user): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -21,7 +21,7 @@ class EventPolicy
      */
     public function view(User $user, Event $event): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -29,23 +29,27 @@ class EventPolicy
      */
     public function create(User $user): bool
     {
-        //
+        return true;
     }
 
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Event $event): bool
+    public function update(User $user, Event $event): Response
     {
-        //
+        return $user->id === $event->user_id
+            ? Response::allow()
+            : Response::deny('許可されていない操作です');
     }
 
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Event $event): bool
+    public function delete(User $user, Event $event): Response
     {
-        //
+        return $user->id === $event->user_id
+            ? Response::allow()
+            : Response::deny('許可されていない操作です');
     }
 
     /**
